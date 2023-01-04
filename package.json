@@ -1,0 +1,35 @@
+{
+  "name": "auxiliary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nw .",
+    "prod": "nwbuild --platforms win32,win64,linux32,linux64 --buildDir dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window": {
+    "title": "auxiliary",
+    "icon": "icon.png",
+    "toolbar": false,
+    "frame": false,
+    "width": 800,
+    "height": 500,
+    "position": "center",
+    "min_width": 400,
+    "min_height": 200,
+    "max_width": 800,
+    "max_height": 600
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "oracledb": "^5.5.0"
+  },
+  "devDependencies": {
+    "nw": "^0.71.1",
+    "nw-builder": "^4.0.4"
+  }
+}
