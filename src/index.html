@@ -15,7 +15,7 @@
             <div class="col-sm-6 mt-2">
                 <div class="card">
                     <div class="card-body">
-                        
+
                     </div>
                 </div>
             </div>
@@ -28,8 +28,10 @@
         onload = () => {
             require('nw.gui').Window.get().showDevTools();
         }
-        const oracledb = require('oracledb');
+        // const oracledb = require('oracledb');
+        const oracledb = require('../node_modules/oracledb/');
         console.log('print');
+        oracledb.initOracleClient({ configDir: 'C:\\oracle\\instantclient_21_8\\network\\admin', libDir: 'C:\\oracle\\instantclient_21_8' });
     </script>
 </body>
 
